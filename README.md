@@ -1,501 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
+
 <head>
- 
-<a href="index.html">voltar</a>
-
-    <span class='index'></span>
-
-  <span class='topo'></span>
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-      			<span	id='topo'></span>
-
-  </head>
-      			<script>
-
-      			$(function(){
-
-$('#info').hide;
-
-$('#titulo').click(function(){
-
-$('#info').toggle();
-
-});
-
-});
-
-				
-
-      		
-
-$(document).ready(function() {
-
-    var $cap1= $('#cap1');
-
-    var $sub1 = $('#sub1');  
-
-    
-
-var myArray = [$cap1, $sub1];
-
-$('#cap1').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$(myArray).each(function(index, element) {
-
-        $('#sub1').show();      
-
-$('#cap1').mouseout(function() {
-
-$('#sub1').hide();
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-});
-
-$(document).ready(function() {
-
-var $cap2= $('#cap2');
-
-    var $sub2 = $('#sub2');  
-
-var myArray = [$cap2, $sub2];
-
-$('#cap2').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$(myArray).each(function(index, element) {
-
-        $('#sub2').show();      
-
-$('#cap2').mouseout(function() {
-
-$('#sub2').hide();
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-});
-
-$(document).ready(function() {
-
-var $cap3= $('#cap3');
-
-    var $sub3 = $('#sub3');  
-
-var myArray = [$cap3, $sub3];
-
-$('#cap3').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$(myArray).each(function(index, element) {
-
-        $('#sub3').show();      
-
-$('#cap3').mouseout(function() {
-
-$('#sub3').hide();
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-});
-
-$(document).ready(function() {
-
-var $cap4= $('#cap4');
-
-    var $sub4 = $('#sub4');  
-
-var myArray = [$cap4, $sub4];
-
-$('#cap4').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$(myArray).each(function(index, element) {
-
-        $('#sub4').show();      
-
-$('#cap4').mouseout(function() {
-
-$('#sub4').hide();
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-});
-
-$(document).ready(function() {
-
-var $cap5= $('#cap5');
-
-    var $sub5 = $('#sub5');  
-
-    
-
-var myArray = [$cap5, $sub5];
-
-$('#cap5').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$(myArray).each(function(index, element) {
-
-        $('#sub5').show();      
-
-$('#cap5').mouseout(function() {
-
-$('#sub5').hide();
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-});
-
-$(document).ready(function() {
-
-$('#sum').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$('#sum').mouseout(function() {
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-$(document).ready(function() {
-
-$('#ref').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$('#ref').mouseout(function() {
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-$(document).ready(function() {
-
-$('#ape').mouseenter(function (){
-
-$(this).addClass('newColor');
-
-$('#ape').mouseout(function() {
-
-$(this).removeClass('newColor');
-
-    });
-
- });
-
-});
-
-      </script>
-
-<style>
-
-            ul {
-
-                list-style-type: none;
-
-            }
-
-            
-
-          #sub1{
-
-      display:none;
-
-}
-
- #sub2{
-
-      display:none;
-
-}
-
- #sub3{
-
-      display:none;
-
-}
-
- #sub4{
-
-      display:none;
-
-}
-
- #sub5{
-
-      display:none;
-
-}
-
-.newColor{
-
-color:red;
-
-}
-
-        </style>
-
-        
-
-        <body>
-
-        
-
- <div  class="container mt-3">
-<p><b>Sumário</b></p> 
- <ul class="nav nav-tabs">
-
-   <li class="nav-item" id="sumário">
-    <a  class="nav-link"  href="#sumario" class="btn btn-info" role="button"> Sumário</a></li>
-    
-  <li class="nav-item" id="cap1">
-    <a  class="nav-link"  href="#introdução" class="btn btn-info" role="button"> INTRODUÇÃO</a></li>
-
-  
-
-  <li class="nav-item" id="cap2">
-    <a  class="nav-link"  href="#referencial" class="btn btn-info" role="button"> REFERENCIAL TEÓRICO</a></li>
-
- 
-      <li class="nav-item" id="cap3"><a class="nav-link" href="#mapeamento" class="btn btn-info" role="button">MAPEAMENTO SISTEMÁTICO DA LITERATURA </a></li>
-
-            
-  <li  class="nav-item" id="cap4"><a class="nav-link" href="#pesquisa" class="btn btn-info" role="button">PESQUISA COM PROFISSIONAIS</a></li>
-
-
-
-  <li  class="nav-item" id="cap5"><a class="nav-link" href="#conclusão"  class="btn btn-info" role="button">CONCLUSÃO</a></li>
-
-   <li  class="nav-item" id="referências"><a class="nav-link" href="#referencias"  class="btn btn-info" role="button">REFERÊNCIAS</a></li>
-   
-   
-   <li  class="nav-item" id="apêndices"><a class="nav-link" href="#apendices"  class="btn btn-info" role="button">APÊNDICES</a></li>
-          </ul>
-         <ol class="breadcrumb">
-
-  <li class="breadcrumb-item"><a href="index.html">Início</a></li>
-
-  <li class="breadcrumb-item"><a href="sumario.html">Índice</a></li>
-
-  
-
-</ol>
-  <div class="tab-content border mb-3">
-    <div id="sumario" class="container tab-pane fade"><br><ul> 
-<li>Sumário............................................................................................8</li></ul> 
-    </div>
-      
-    <div id="introdução" class="container tab-pane fade"><br><ul> 
-      <li>1. INTRODUÇÃO ...................................................................................................................................4</li>
-      <li>1.1 Motivação Motivação Motivação........................................................................................5 </li> 
-      <li>1.2 Objetivos................................................................................................................................5 </li>
-      <li> 1.3 Metodologia.........................................................................................................................5</li>
-      <li>1.4 Estrutura do Trabalho..........................................................................................................5</li></ul>
-    </div>
-<div id="referencial" class="container tab-pane fade"><br><ul>
-        <li>2. REFERENCIAL TEÓRICO .................................................................................................................7</li>
-        <li>2.1 Introdução.............................................................................................................................7</li>
-        <li>2.2 Testes de Software ..............................................................................................................7</li>
-        <li>2.3 Modelos de Maturidade ......................................................................................................8</li>
-        <li>2.4 TMMi .....................................................................................................................................8</li>
-        <li>2.4.1 Nível 1 – Inicial .......................................................................................................10</li>
-        <li>2.4.2 Nível 2 – 2.4.1 Nível 1 – Inicial ..............................................................................10</li>
-        <li>2.4.3 Nível 3 – Definido ...................................................................................................11</li>
-        <li>2.4.4 Nível 4 – Mensurado ...............................................................................................11</li>
-        <li>2.4.5 Nível 5 – Otimizado ................................................................................................12</li>
-        <li>2.5 Áreas de Processos do TMMi Nível 2.................................................................................12</li>
-        <li>2.5.1 Políticas e Estratégias de Testes ..............................................................................12</li>
-        <li>2.5.2 Planejamento de Testes ...........................................................................................13</li>
-        <li>2.5.3 Monitoramento e Controle do Processo de Teste...................................................14</li>
-        <li>2.5.4 Design e Execução de testes...................................................................................15</li>
-        
-        <li>2.5.5 Ambiente de Testes.................................................................................................16 </li>
-  <li>2.6 Considerações Finais................................17 </li></ul>
-  </div>
-    <div id="mapeamento" class="container tab-pane fade"><br><ul>
-        <li>3. MAPEAMENTO SISTEMÁTICO DA LITERATURA .........................................................................17</li>
-        <li>3.1 Introdução ...........................................................................................................................17</li>
-        <li>3.2 Método de Pesquisa ............................................................................................................17</li>
-        <li>3.2.1 Perguntas de pesquisa ............................................................................................17</li>
-        <li>3.2.2 Estratégia de busca ................................................................................................17</li>
-        <li>Resultados .........................................................................................................................18</li>
-        <li>3.3.1 IEEE ......................................................................................................................20</li>
-        <li>3.3.2 SCOPUS ................................................................................................................21</li>
-        <li>3.3.3 GOOGLE SCHOLAR ...........................................................................................23</li>
-        <li>3.3.4 ACM ......................................................................................................................25</li>
-        <li>3.4 Considerações finais ...........................................................................................................25</li></ul>
-      </div>
-    <div id="pesquisa" class="container tab-pane fade"><br><ul>
-        <li> 4. PESQUISA COM PROFISSIONAIS .................................................................................................27</li>
-        <li>4.1 Introdução ...........................................................................................................................27</li>
-        <li>4.2 Metodologia .......................................................................................................................27</li>
-        <li>.3 Questionário .......................................................................................................................28</li>
-        <li>4.4 Amostra ..............................................................................................................................28</li>
-        <li>4.4.1 Perfil profissional e pessoal ..................................................................................28</li>
-        <li>4.4.2 Perfil da empresa ..................................................................................................32</li>
-        <li>4.4.3 Práticas do TMMi..................................................................................................33</li>
-        <li>4.5 Considerações Finais ...............................................................................................45</li>
-      </div></ul>
-     <div id="conclusão" class="container tab-pane fade"><br><ul>
-        
-       <li>5.CONCLUSÃO ...................................................................................................................................47</li>
-        <li>5.1 Considerações Finais .........................................................................................................47</li>
-        <li>5.2 Limitações .........................................................................................................................47</li>
-        <li>5.3 Trabalhos Futuros ..............................................................................................................48</li></ul>
-         </div>
-    
-    <div id="toast1" class="toast" style="position: absolute; down: 0; right: 0;" role="alert" aria-live="assertive" aria-atomic="true"   data-delay="5000">
-    <div class="toast-header">
-     <strong class="mr-auto">Capítulo 1</strong> 
-    </div>
-    <div class="toast-body">
-      Introdução           
-    </div>
-  </div>
-    
-    <div id="toast2" class="toast" style="position: absolute; down: 0; right: 0;" role="alert" aria-live="assertive" aria-atomic="true"   data-delay="5000">
-    <div class="toast-header">
-     <strong class="mr-auto">Capítulo 2</strong> 
-    </div>
-    <div class="toast-body">
-      Referencial Teórico
-    </div>
-  </div>
-    
-     <div id="toast3" class="toast" style="position: absolute; down: 0; right: 0;" role="alert" aria-live="assertive" aria-atomic="true"   data-delay="5000">
-    <div class="toast-header">
-     <strong class="mr-auto">Capítulo 3</strong> 
-    </div>
-    <div class="toast-body">
-      Mapeamento Sistemático da Literatura
-    </div>
-  </div>
-    
-    <div id="toast4" class="toast" style="position: absolute; down: 0; right: 0;" role="alert" aria-live="assertive" aria-atomic="true"   data-delay="5000">
-    <div class="toast-header">
-     <strong class="mr-auto">Capítulo 4</strong> 
-    </div>
-    <div class="toast-body">
-      Pesquisa com Profissionais
-    </div>
-  </div>
-    
-    <div id="toast5" class="toast" style="position: absolute; down: 0; right: 0;" role="alert" aria-live="assertive" aria-atomic="true"   data-delay="5000">
-    <div class="toast-header">
-     <strong class="mr-auto">Capítulo 5</strong> 
-    </div>
-    <div class="toast-body">
-      Conclusão
-    </div>
-  </div>
-   </div>
-   <a href="#topo">Voltar ao topo</a>
-<script>
-$(document).ready(function(){
-  $("#cap1").click(function(){
-    $('#toast1').toast('show');
-    
-  });
-});
-</script>
-   
-   <script>
-$(document).ready(function(){
-  $("#cap2").click(function(){
-    $('#toast2').toast('show');
-  });
-});
-</script>
-   
-    <script>
-$(document).ready(function(){
-  $("#cap3").click(function(){
-    $('#toast3').toast('show');
-  });
-});
-</script>
-    
-   <script>
-$(document).ready(function(){
-  $("#cap4").click(function(){
-    $('#toast4').toast('show');
-  });
-});
-</script>
-   
-    <script>
-$(document).ready(function(){
-  $("#cap5").click(function(){
-    $('#toast5').toast('show');
-  });
-});
-</script>
-    <script>
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
- $('.nav-tabs a').on('shown.bs.tab', function(event){
-    var x = $(event.target).text();         //active tab
-    var y = $(event.relatedTarget).text();  // previous tab
-    $(".act span").text(x);
-    $(".prev span").text(y);
-  });
-});
-   </script>
-
+        <title>Two applets + API</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="navigation.js"></script>
+</head>
+
+<body>
+<div>
+        <h1>Two applets + API</h1>
+        <p>This is an example of an HTML file containing a GeoGebra applet with buttons triggering the GeoGebra Javascript API.</p>
+
+        <script type="text/javascript" src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+        <script type="text/javascript">
+
+                var parameters1 = {"id":"app1","width":435,"height":185,"showToolBar":false,"borderColor":null,"showMenuBar":false,"showAlgebraInput":false,"showResetIcon":true,"enableLabelDrags":false,"enableShiftDragZoom":true,"enableRightClick":false,"capturingThreshold":null,"showToolBarHelp":false,"errorDialogsActive":true,"useBrowserForJS":false,"ggbBase64":"ggbpastedataQ0xJUEJPQVJEbWFnaWNTVFJJTkdBJTIwQ0xJUEJPQVJEbWFnaWNTVFJJTkdCJTIwQ0xJUEJPQVJEbWFnaWNTVFJJTkdDJTIwQ0xJUEJPQVJEbWFnaWNTVFJJTkdhJTIwJTBBJTNDZWxlbWVudCUyMHR5cGUlM0QlMjJwb2ludCUyMiUyMGxhYmVsJTNEJTIyQ0xJUEJPQVJEbWFnaWNTVFJJTkdBJTIyJTNFJTBBJTA5JTNDc2hvdyUyMG9iamVjdCUzRCUyMmZhbHNlJTIyJTIwbGFiZWwlM0QlMjJ0cnVlJTIyLyUzRSUwQSUwOSUzQ29iakNvbG9yJTIwciUzRCUyMjc3JTIyJTIwZyUzRCUyMjc3JTIyJTIwYiUzRCUyMjI1NSUyMiUyMGFscGhhJTNEJTIyMCUyMi8lM0UlMEElMDklM0NsYXllciUyMHZhbCUzRCUyMjAlMjIvJTNFJTBBJTA5JTNDbGFiZWxNb2RlJTIwdmFsJTNEJTIyMCUyMi8lM0UlMEElMDklM0NhbmltYXRpb24lMjBzdGVwJTNEJTIyMC4xJTIyJTIwc3BlZWQlM0QlMjIxJTIyJTIwdHlwZSUzRCUyMjElMjIlMjBwbGF5aW5nJTNEJTIyZmFsc2UlMjIvJTNFJTBBJTA5JTNDcG9pbnRTaXplJTIwdmFsJTNEJTIyNSUyMi8lM0UlMEElMDklM0Nwb2ludFN0eWxlJTIwdmFsJTNEJTIyMCUyMi8lM0UlMEElMDklM0Njb29yZHMlMjB4JTNEJTIyLTE4LjI4ODA0MTEzMDU5NjIxJTIyJTIweSUzRCUyMjE5LjIwMTk1NzE0OTkzMjM4NyUyMiUyMHolM0QlMjIxJTIyLyUzRSUwQSUzQy9lbGVtZW50JTNFJTBBJTNDZWxlbWVudCUyMHR5cGUlM0QlMjJwb2ludCUyMiUyMGxhYmVsJTNEJTIyQ0xJUEJPQVJEbWFnaWNTVFJJTkdCJTIyJTNFJTBBJTA5JTNDc2hvdyUyMG9iamVjdCUzRCUyMmZhbHNlJTIyJTIwbGFiZWwlM0QlMjJ0cnVlJTIyLyUzRSUwQSUwOSUzQ29iakNvbG9yJTIwciUzRCUyMjc3JTIyJTIwZyUzRCUyMjc3JTIyJTIwYiUzRCUyMjI1NSUyMiUyMGFscGhhJTNEJTIyMCUyMi8lM0UlMEElMDklM0NsYXllciUyMHZhbCUzRCUyMjAlMjIvJTNFJTBBJTA5JTNDbGFiZWxNb2RlJTIwdmFsJTNEJTIyMCUyMi8lM0UlMEElMDklM0NhbmltYXRpb24lMjBzdGVwJTNEJTIyMC4xJTIyJTIwc3BlZWQlM0QlMjIxJTIyJTIwdHlwZSUzRCUyMjElMjIlMjBwbGF5aW5nJTNEJTIyZmFsc2UlMjIvJTNFJTBBJTA5JTNDcG9pbnRTaXplJTIwdmFsJTNEJTIyNSUyMi8lM0UlMEElMDklM0Nwb2ludFN0eWxlJTIwdmFsJTNEJTIyMCUyMi8lM0UlMEElMDklM0Njb29yZHMlMjB4JTNEJTIyLTExLjg5ODMzODYyMDU0ODI2MiUyMiUyMHklM0QlMjIzMi4zMzI5NzY1MTE5MTkwMzYlMjIlMjB6JTNEJTIyMSUyMi8lM0UlMEElM0MvZWxlbWVudCUzRSUwQSUzQ2NvbW1hbmQlMjBuYW1lJTNEJTIyY3VydmFkZWIlRTl6aWVyMiUyMiUzRSUwQSUwOSUzQ2lucHV0JTIwYTAlM0QlMjJDTElQQk9BUkRtYWdpY1NUUklOR0ElMjIlMjBhMSUzRCUyMkNMSVBCT0FSRG1hZ2ljU1RSSU5HQiUyMiUyMGEyJTNEJTIyQ0xJUEJPQVJEbWFnaWNTVFJJTkdDJTIyLyUzRSUwQSUwOSUzQ291dHB1dCUyMGEwJTNEJTIyQ0xJUEJPQVJEbWFnaWNTVFJJTkdhJTIyLyUzRSUwQSUzQy9jb21tYW5kJTNFJTBBJTNDZWxlbWVudCUyMHR5cGUlM0QlMjJjdXJ2ZWNhcnRlc2lhbiUyMiUyMGxhYmVsJTNEJTIyQ0xJUEJPQVJEbWFnaWNTVFJJTkdhJTIyJTNFJTBBJTA5JTNDc2hvdyUyMG9iamVjdCUzRCUyMnRydWUlMjIlMjBsYWJlbCUzRCUyMnRydWUlMjIlMjBldiUzRCUyMjQlMjIvJTNFJTBBJTA5JTNDb2JqQ29sb3IlMjByJTNEJTIyMCUyMiUyMGclM0QlMjIwJTIyJTIwYiUzRCUyMjAlMjIlMjBhbHBoYSUzRCUyMjAlMjIvJTNFJTBBJTA5JTNDbGF5ZXIlMjB2YWwlM0QlMjIwJTIyLyUzRSUwQSUwOSUzQ2xhYmVsTW9kZSUyMHZhbCUzRCUyMjAlMjIvJTNFJTBBJTA5JTNDbGluZVN0eWxlJTIwdGhpY2tuZXNzJTNEJTIyNSUyMiUyMHR5cGUlM0QlMjIwJTIyJTIwdHlwZUhpZGRlbiUzRCUyMjElMjIlMjBvcGFjaXR5JTNEJTIyMTc4JTIyLyUzRSUwQSUzQy9lbGVtZW50JTNFJTBB"};
+
+                var applet1 = new GGBApplet(parameters1, '5.0');
+                //  when used with Math Apps Bundle, uncomment this:
+                //applet1.setHTML5Codebase('GeoGebra/HTML5/5.0/web/');
+
+                var parameters2 = {"id":"app2","width":435,"height":200,"showToolBar":false,"borderColor":null,"showMenuBar":false,"showAlgebraInput":false,"showResetIcon":true,"enableLabelDrags":false,"enableShiftDragZoom":true,"enableRightClick":false,"capturingThreshold":null,"showToolBarHelp":false,"errorDialogsActive":true,"useBrowserForJS":false,"ggbBase64":"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"};
+
+                var applet2 = new GGBApplet('5.0', parameters2);
+                //  when used with Math Apps Bundle, uncomment this:
+                //applet2.setHTML5Codebase('GeoGebra/HTML5/5.0/webSimple/');
+
+                window.addEventListener("load", function() {
+                    applet1.inject('applet_container1');
+                    applet2.inject('applet_container2');
+                 });
+
+        </script>
+
+        Here is the first applet:<p>
+        <div id="applet_container1"></div>
+        <form>
+                <input value="Set point A invisible" onclick="app1.setVisible('A', false)" type="button">
+                <input value="Set point A visible" onclick="app1.setVisible('A', true)" type="button">
+        </form>
+        <p>
+
+        Here is the second applet:<p>
+        <div id="applet_container2"></div>
+        <form>
+                <input value="Set points A and B invisible" onclick="app2.setVisible('A', false); app2.setVisible('B', false)" type="button">
+                <input value="Set points A and B visible" onclick="app2.setVisible('A', true); app2.setVisible('B', true)" type="button">
+        </form>
+        <p>
+        That is all!
+</div>
 </body>
-</html>
 
+</html>
