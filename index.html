@@ -54,10 +54,31 @@ $('#applet_container1').toggle();
 });
 
 });
+
+
+$(document).ready(function() {
+var botao = ['botao1', 'botao2'];
+var applet = ['#applet_container1', '#applet_container3'];
+for(let i = 0; i<applet.length; i++){
+$('input').click(function(){
+if($(this).attr('class') == botao[i]) {
+$(applet[i]).show();
+} else {
+$(applet[i]).hide();
+};
+});
+}
+
+});
+
         </script>
         <style>
-            #applet_container1{
-      display:none; }
+        #applet_container3{
+              display:none;
+          }
+           #applet_container1{
+              display:none;
+          }
         </style>
 
         
@@ -65,13 +86,18 @@ $('#applet_container1').toggle();
         
         <p>
 
-        
         <div id="applet_container3"></div>
         <p></p>
+        
         <form>
+           
+            <input id="botao" class="botao2" value="curva" type="button">
+        </form>
+        <form>
+                                
+                <input id="botao" class="botao1" value="molde" type="button">
                 
                 
-                <input id="botao" value="molde" type="button">
         </form>
         
       
