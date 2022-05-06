@@ -5,15 +5,6 @@
         <title>modelagem</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script src="navigation.js"></script>
-		<link rel="stylesheet" href="src/css/start.css">
-    <link rel="stylesheet" href="src/css/topo.css">
-    <link rel="stylesheet" href="src/css/home.css">
-    <link rel="stylesheet" href="src/css/sobre.css">
-    <link rel="stylesheet" href="src/css/portfolio.css">
-    <link rel="stylesheet" href="src/css/contato.css">
-    <link rel="stylesheet" href="src/css/responsivo.css">
-
-    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -107,115 +98,6 @@ $(applet[i]).hide();
 			
 			
         </script>
-        <script src="src/js/script.js">
-        let buttonElement = document.querySelector('.main-menu__btn');
-let menuElement = document.querySelector('.main-menu__list');
-let item1 = document.getElementById('b1one');
-let item2 = document.getElementById('b2two');
-let item3 = document.getElementById('b3three');
-
-function openClose(evento) {
-    buttonElement.classList.toggle('main-menu__btn--close');
-    menuElement.classList.toggle('main-menu__list--close');
-    item1.classList.toggle('main-menu__item--close');
-    item2.classList.toggle('main-menu__item--close');
-    item3.classList.toggle('main-menu__item--close');
-};
-
-buttonElement.addEventListener('click', openClose);
-
-        const listaProjetos = document.querySelectorAll('.projeto')
-
-listaProjetos.forEach(projeto =>{
-    projeto.addEventListener('click', () => {
-        const idProjeto = projeto.attributes.id.value
-        if (idProjeto === "spotify"){
-            window.open('https://github.com/ryanzin10/replica-spotify/', '_blank');
-        }
-
-        else if (idProjeto === "netflix"){
-            window.open('https://github.com/ryanzin10/replica-netflix', '_blank');
-        }
-
-        else if (idProjeto === "jokenpo2"){
-            window.open('https://github.com/ryanzin10/jokenpo-2', '_blank');
-        }
-
-        else if (idProjeto === "pokedex"){
-            window.open('https://github.com/ryanzin10/Pokedex', '_blank');
-        }
-        else if (idProjeto === "timesBR"){
-            window.open('https://github.com/ryanzin10/maiores-times-BR', '_blank');
-        }
-    })
-})
-
-class MobileNavbar{
-    constructor(topoDireita2, topoDireita, navLinks){
-        this.topoDireita2 = document.querySelector(topoDireita2);
-        this.topoDireita = document.querySelector(topoDireita);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = 'ativo';
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks(){
-        this.navLinks.forEach((link)=>{
-            link.style.animation
-            ?(link.style.animation = "")
-            :(link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
-        });
-    }
-    handleClick(){
-        this.topoDireita.classList.toggle(this.activeClass);
-        this.topoDireita2.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-    addClickEvent(){
-        this.topoDireita2.addEventListener("click", this.handleClick)
-    };
-
-    init(){
-        if(this.topoDireita2){
-            this.addClickEvent();
-        }
-       return this;
-    }
-}
-
-const mobileNavbar = new MobileNavbar(
-    ".topoDireita2",
-    ".topoDireita",
-    ".topoDireita a"
-);
-mobileNavbar.init();
-
-
-const listaRedes = document.querySelectorAll('.rede')
-
-listaRedes.forEach(contato =>{
-    contato.addEventListener('click', () => {
-        const idContato = contato.attributes.id.value
-        if (idContato === "github"){
-            window.open('https://github.com/ryanzin10/', '_blank');
-        }
-
-        else if (idContato === "linkedin"){
-            window.open('https://www.linkedin.com/in/ryanzin10/', '_blank');
-        }
-
-        else if (idContato === "insta"){
-            window.open('https://www.instagram.com/ryanzin10/', '_blank');
-        }
-
-        else if (idContato === "wpp"){
-            window.open('https://api.whatsapp.com/send?phone=5582981053081&text=Ol%C3%A1%2C%20visitei%20seu%20portf%C3%B3lio%20e%20me%20interessei%20por%20suas%20habilidades!', '_blank')
-        }
-
-    })
-})
-    </script>
         <style>
         #applet_container3{
               display:none;
@@ -234,7 +116,23 @@ listaRedes.forEach(contato =>{
         
         <p>
             
+        <div id="applet_container2"></div>
         
+		
+<p class="text">    
+</p>
+<form class="text" action="" onsubmit="evalInput(inputBox.value);inputBox.value='';return false;">
+    <p>
+        Exemplo de como colocar a sua medida;<br>
+        cintura=66<br><a href=""></a>
+        torax=22
+        <br>
+        Nota: o nome das medidas devem ficar em minúsculo e sem acento.
+      <br>
+    
+<label>Medidas:</label>
+<input type="text" class="inputbox" name="inputBox" size="30" oninput="handleInput(event)">
+
 </form> 
 </div>
 
@@ -258,131 +156,6 @@ listaRedes.forEach(contato =>{
       
 </div>
 
-    
-    <div class="mae">
-
-        <header>
-            <div class="topoEsquerda">
-                <a href="">Moldes de roupas</a>
-            </div>
-            <div class="topoDireita">
-                <a href="#home1" class="opcoes">HOME</a>
-                <a href="#sobre" class="opcoes">MOLDE SAIA</a>
-                <a href="#portfolio1" class="opcoes">MOLDE CALÇA</a>
-                <a href="#contato1" class="opcoes">MOLDE BLUSA</a>
-            </div>
-            <nav class="topoDireita2">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </nav>
-        </header>
-
-        <div class="home" id="home1">
-            <div class="conteudoHome">
-                <div class="titulos">
-                    <h1>modelagem</h1>
-                    <h2>APPLET SAIA<h2>
-                </div>
-                <div class="botaoVisitar">
-                    <a href="#portfolio1"><span>Visitar portfólio</span></a>
-                </div>
-            </div>
-        </div>
-
-
-            <div class="topico" id="sobre">
-                <div class="titulos">
-                    <h2>Sobre</h2>
-                </div>
-                <div class="colunas">
-                    <div class="coluna">
-                        <div class="imagemPerfil">
-                            <img src="src/images/perfil.jpg" alt="Foto de Rian Santos">
-                        </div>
-                        <div class="sobreMim">
-                            
-                        </div>
-                    </div>
-                    <div class="coluna">
-                        <div class="imagemIfal">
-                            <img src="src/images/ifal.jpg" alt="Logo do IFAL oficial">
-                        </div>
-                        <div class="sobreMim">
-                            <div id="applet_container2"></div>
-        
-		
-<p class="text">    
-</p>
-<form class="text" action="" onsubmit="evalInput(inputBox.value);inputBox.value='';return false;">
-    <p>
-        Exemplo de como colocar a sua medida;<br>
-        cintura=66<br><a href=""></a>
-        torax=22
-        <br>
-        Nota: o nome das medidas devem ficar em minúsculo e sem acento.
-      <br>
-    
-<label>Medidas:</label>
-<input type="text" class="inputbox" name="inputBox" size="30" oninput="handleInput(event)">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio" id="portfolio1">
-                <div class="titulos">
-                    <h2>Portfólio</h2>
-                </div>
-                <div class="colunas">
-                    <div class="coluna">
-                        <div class="projeto" id="spotify">
-                            <div>
-                                <h3>Réplica Spotify</h3>
-                            </div>
-                            <p>Réplica da página web do Spotify feita no intuito de aprimorar habilidades de HTML5 e CSS3.</p>
-                        </div>
-                        <div class="projeto" id="netflix">
-                            <h3>Réplica Netflix</h3>
-                            <p>Réplica da página web da Netflix.com feita no intuito de aprimorar habilidades de HTML5 e CSS3.</p>
-                        </div>
-                    </div>
-
-                    <div class="coluna">
-                        <div class="projeto" id="jokenpo2">
-                            <h3>Jokenpo 2.0</h3>
-                            <p>JOKENPO desenvolvido em React Native, suportado em Android e iOS.</p>
-                        </div>
-                        <div class="projeto">
-                            <h3>Simulador IFAL</h3>
-                            <p>Simula provas anteriores do Instituto Federal de Alagoas, visando a preparação de ingressantes.</p>
-                        </div>
-                    </div>
-
-                    <div class="coluna">
-                        <div class="projeto" id="pokedex">
-                            <h3>Pokédex</h3>
-                            <p>Página web com cartas de pokemons alternáveis desenvolvida com HTML5, CSS3 e JS.</p>
-                        </div>
-                        <div class="projeto" id="timesBR">
-                            <h3>Maiores times BR</h3>
-                            <p>Site sobre os maiores times BR visando aprimorar habilidades em HTML5, CSS3 em conjunto com Bulma.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contato" id="contato1">
-                <img class="rede" id="github" src="/src/images/github.png" alt="Github">
-                <img class="rede" id="insta" src="/src/images/insta.png" alt="Instagram">
-                <img class="rede" id="linkedin" src="/src/images/linkedin.png" alt="Linkedin">
-                <img class="rede" id="wpp" src="/src/images/wpp.png" alt="WhatsApp">
-            </div>
-        
-    </div>
-
-    
 </body>
 
 </html>
