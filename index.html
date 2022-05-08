@@ -156,7 +156,7 @@ jQuery(document).ready(function() {
     <ul class="navbar-nav">
       <li id="li" class="home">                                  
         <a  class="nav-link active" href="#conteudohome">Home<span class="sr-only">(current)</span>        </a></li>
-      <li id="li" class="blusa">                                 
+      <li id="li" class="blusa" >                                 
         <a class="nav-link" href="#applet_container1">Blusa</a>
       </li>
       <li id="li" class="saia">               
@@ -178,31 +178,42 @@ jQuery(document).ready(function() {
 <div id="applet_container1" >   	
 </div>
                              
-     <div id="applet_container2">
-         	    </div>                      
+     <div id="applet_container2" >
+         	    </div> <br>                     
        
-        <div id="applet_container3">
+        <div id="applet_container3" >
             
             
                 
         </div>
         
         
-<form id="form1" action="" onsubmit="evalInput1(inputBox.value);inputBox.value='';return false;">
+<form id="form1" action="" align="center">
     <p>
-        Exemplo de como colocar a sua medida;<br>                
-        alturadocorpo=39<br>
-        busto=82<br>
-        cintura=66<br>
-        ombro=11<br>
-        
-        Nota: o nome das medidas devem ficar em minúsculo e sem acento.
-      <br>
-    
-<label>Medidas:</label>
-<input type="text" class="inputbox" name="inputBox" size="30" oninput="handleInput(event)">
+     Nota: o nome das medidas devem ficar em minúsculo e sem acentuação e espaço.
+      <br><br>
+<label>Altura do corpo:</label>    
+<input placeholder="ex:alturadocorpo=45" type="text" size="30" class="inputbox1" name="inputBox1" oninput="handleInput(event)">
+<button id="btn1" onclick="evalInput1(inputBox1.value);inputBox1.value='';return false;">Ok</button><br>
+
+<label>Busto:</label>
+<input type="text" placeholder="ex:busto=89" size="30" class="inputbox2" name="inputBox2" oninput="handleInput(event)">
+<button id="btn2" onclick="evalInput1(inputBox2.value);inputBox2.value='';return false;">Ok</button><br>
+
+<label>Cintura:</label>
+<input type="text" size="30" placeholder="ex:cintura=89" class="inputbox3" name="inputBox3" oninput="handleInput(event)">
+<button id="btn3" onclick="evalInput1(inputBox3.value);inputBox3.value='';return false;">Ok</button><br>
+
+<label>Ombro:</label>
+<input type="text" placeholder="ex:ombro=12" size="30" class="inputbox4" name="inputBox4" oninput="handleInput(event)">
+<button id="btn1" onclick="evalInput1(inputBox4.value);inputBox4.value='';return false;">Ok</button>    
+
     
 </form> 
+        
+        
+        
+        
         
         
 <form id="form2" action="" onsubmit="evalInput2(inputBox.value);inputBox.value='';return false;">
