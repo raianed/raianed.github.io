@@ -198,30 +198,35 @@ jQuery(document).ready(function() {
     <p>
      Nota: os nomes das medidas devem ficar em minúsculo, sem acentuação e sem espaço.
       <br><br>
-<label>Altura do corpo:</label>    
-<input placeholder="alturadocorpo=45" type="text" size="30" class="inputbox1" name="inputBox1" oninput="handleInput(event)" >
-<button id="btn1" onclick="evalInput1(inputBox1.value);inputBox1.value='';return false;">Ok</button><br>
+      <div class="form-group">
+<label for="alturadocorpo" >Altura do corpo:</label>    
+<input placeholder="alturadocorpo=45" type="text" size="30" class="form-control" name="inputBox1" oninput="handleInput(event)" >
+<button id="btn1" class="btn btn-primary" onclick="evalInput1(inputBox1.value);inputBox1.value='';return false;">Ok</button><br>
+</div>
 
-<label>Busto:</label>
-<input type="text" placeholder="busto=89" size="30" class="inputbox2" name="inputBox2" oninput="handleInput(event)">
-<button id="btn2" onclick="evalInput1(inputBox2.value);inputBox2.value='';return false;">Ok</button><br>
+<div class="form-group">
+<label for="busto" >Busto:</label>
+<input type="text" placeholder="busto=89" size="30" class="form-control" name="inputBox2" oninput="handleInput(event)">
+<button id="btn2" class="btn btn-primary" onclick="evalInput1(inputBox2.value);inputBox2.value='';return false;">Ok</button><br>
+</div>
 
-<label>Cintura:</label>
-<input type="text" size="30" placeholder="cintura=89" class="inputbox3" name="inputBox3" oninput="handleInput(event)">
-<button id="btn3" onclick="evalInput1(inputBox3.value);inputBox3.value='';return false;">Ok</button><br>
+<div class="form-group">
+<label for="cintura" >Cintura:</label>
+<input type="text" size="30" placeholder="cintura=89" class="form-control" name="inputBox3" oninput="handleInput(event)">
+<button id="btn3" class="btn btn-primary" onclick="evalInput1(inputBox3.value);inputBox3.value='';return false;">Ok</button><br>
+</div>
 
-<label>Ombro:</label>
-<input type="text" placeholder="ombro=12" size="30" class="inputbox4" name="inputBox4" oninput="handleInput(event)">
-<button id="btn1" onclick="evalInput1(inputBox4.value);inputBox4.value='';return false;">Ok</button>    
-
+<div class="form-group">
+<label for="ombro" >Ombro:</label>
+<input type="text" placeholder="ombro=12" size="30" class="form-control" name="inputBox4" oninput="handleInput(event)">
+<button id="btn1" class="btn btn-primary" onclick="evalInput1(inputBox4.value);inputBox4.value='';return false;">Ok</button>    
+</div>
 
 
 </form> 
+                       
         
-        
-        
-        
-        
+                                      
         
 <form id="form2" action="" onsubmit="evalInput2(inputBox.value);inputBox.value='';return false;">
     <p>
