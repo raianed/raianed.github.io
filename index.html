@@ -141,6 +141,69 @@ $(applet[i]).hide();
 });
 
 
+
+$(document).ready(function(){
+  $(".blusa").click(function(){
+    $("#applet_container1").removeClass("newClass1");
+  });
+});
+
+$(document).ready(function(){
+  $(".saia").click(function(){
+    $("#applet_container2").removeClass("newClass2");
+  });
+});
+
+
+$(document).ready(function(){
+  $(".vestido").click(function(){
+    $("#applet_container3").removeClass("newClass3");
+  });
+});
+
+$(document).ready(function(){
+  $(".calca").click(function(){
+    $("#applet_container4").removeClass("newClass4");
+  });
+});
+
+$(document).ready(function(){
+  $(".mangapm").click(function(){
+    $("#applet_container5").removeClass("newClass5");
+  });
+});
+
+$(document).ready(function(){
+  $(".mangag").click(function(){
+    $("#applet_container6").removeClass("newClass6");
+  });
+});
+
+$(document).ready(function(){
+  $(".corpo").click(function(){
+    $("#applet_container7").removeClass("newClass7");
+  });
+});
+
+$(document).ready(function(){
+  $(".manga").click(function(){
+    $("#applet_container8").removeClass("newClass8");
+  });
+});
+
+$(document).ready(function(){
+  $(".calcam").click(function(){
+    $("#applet_container9").removeClass("newClass9");
+  });
+});
+</script>
+
+</script>
+
+</script>
+
+
+
 </script>
 
 <style>
@@ -299,76 +362,74 @@ padding-left: 20px;
   
 }
 
-          #applet_container1{
-              display:none;   
-              position: absolute;          
-              align:center;
+         .newClass1{
+                 visibility:hidden;
+         }
+
+          .newClass2{
+                 visibility:hidden;
+         }
+         .newClass3{
+                 visibility:hidden;
+         }
+         .newClass4{
+                 visibility:hidden;
+         }
+         .newClass5{
+                 visibility:hidden;
+         }
+         .newClass6{
+                 visibility:hidden;
+         }
+         .newClass7{
+                 visibility:hidden;
+         }
+         .newClass8{
+                 visibility:hidden;
+         }
+         .newClass9{
+                 visibility:hidden;
+         }
+
+
+
+              #applet_container1{
               top: 10%;
-              left:4%;    
-          }          
-          
+              position:absolute;
+                         
+          }
           #applet_container2{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
+              position:absolute;
           }
-          
           #applet_container3{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
+              position:absolute;
           }
-          
           #applet_container4{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
-          }    
-                          
+              position:absolute;
+          }                    
            #applet_container5{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
-          }  
-                 
+              position:absolute;
+          }         
            #applet_container6{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
+              position:absolute;
           }          
-          
           #applet_container7{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
+              position:absolute;
           }
-          
           #applet_container8{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
+              position:absolute;
           }
           
           #applet_container9{
-              display:none;   
-              position: absolute;          
-              align:center;
               top: 10%;
-              left:4%;  
+              position:absolute;
           }          
           
          #img1{
@@ -390,6 +451,7 @@ padding-left: 20px;
 	         z-index:1;
 	         
          }
+       
 </style>
 
 <body>
@@ -436,23 +498,23 @@ padding-left: 20px;
   <div class="container" >
         
   <img id="img1" src="fundo.png" height="300"  ></div>
-  <div id="applet_container1"></div>
+  <div id="applet_container1" class="newClass1"></div>
          	                                         
-<div id="applet_container2" ></div>
+<div id="applet_container2" class="newClass2"></div>
                   
-<div id="applet_container3"></div>           
+<div id="applet_container3" class="newClass3"></div>           
             
-   <div id="applet_container4"></div>
+   <div id="applet_container4" class="newClass4"></div>
          	                                         
-<div id="applet_container5" ></div>
+<div id="applet_container5" class="newClass5"></div>
                   
-<div id="applet_container6" ></div>                  
+<div id="applet_container6" class="newClass6"></div>                  
                 
-<div id="applet_container7" ></div>
+<div id="applet_container7" class="newClass7"></div>
                   
-<div id="applet_container8" ></div>
+<div id="applet_container8" class="newClass8"></div>
                   
-<div id="applet_container9" ></div>             
+<div id="applet_container9" class="newClass9"></div>             
   
   
   
