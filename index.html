@@ -196,17 +196,30 @@ $(document).ready(function(){
     $("#applet_container9").removeClass("newClass9");
   });
 });
-</script>
+
+
+
+$(function(){
+$('#overlay').hide;
+$('input,.blusa,.saia,.vestido,.calca,.mangapm,.mangag,.corpo,.manga,.calcam').click(function(){
+$('#overlay').toggle();
+});
+});
+
+
+
+                
+
 
 </script>
 
-</script>
-
-
-
-</script>
 
 <style>
+    
+    .overlaycss{
+        display: none;
+    }
+    
     a:hover {
     color: #8271F6;
 }
@@ -254,6 +267,7 @@ $(document).ready(function(){
   position: relative;
   background:white;
 }
+
 #overlay-button span:after {
   top: 10px;
 }
@@ -273,26 +287,18 @@ $(document).ready(function(){
 input[type=checkbox] {
   display: none;
 }
-input[type=checkbox]:checked ~ #overlay {
-  visibility: visible;
-}
-input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
-  background: transparent;
-}
-input[type=checkbox]:checked ~ #overlay-button span:before {
-  transform: rotate(45deg) translate(7px, 7px);
-  
-}
-input[type=checkbox]:checked ~ #overlay-button span:after {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
+
+
+
+
+
 
 #overlay {
 z-index: 2;
   height: 100%;
   width: 45%;
   background:white;
-  visibility: hidden;
+  
   position: absolute;
 }
 
@@ -480,7 +486,7 @@ padding-left: 20px;
 <input type="checkbox" id="overlay-input" />
 <label for="overlay-input" id="overlay-button"><span></span></label>
 
-  <div id="overlay">
+  <div id="overlay" class="overlaycss">
           <a class="home" href="#divhome"><hr>HOME</a>               
          <a id="moldesf" href="#"><hr>MOLDES FEMININOS<hr></a>
          
@@ -515,6 +521,7 @@ padding-left: 20px;
 <br>
 <br>
 <br>
+
 <div  id="applet_container1" class="newClass1"></div>
          	                                         
 <div id="applet_container2" class="newClass2"></div>
