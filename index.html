@@ -114,13 +114,13 @@ $('#moldesb').toggle();
 
 $(document).ready(function(){
 $(".home,#moldesm,#moldesf").click(function(){
-    $("#divhome,#img1,#objetivo").show();
+    $("#principal,#img1,#objetivo").show();
   });
 });
 
 $(document).ready(function(){
   $(".blusa,.saia,.vestido,.calca,.mangapm,.mangag,.corpo,.manga,.calcam").click(function(){
-    $("#divhome,#img1,#objetivo").hide();
+    $("#principal,#img1,#objetivo").hide();
   });
 });
 
@@ -128,7 +128,7 @@ $(document).ready(function(){
 $(document).ready(function() {
 var botao = ['blusa','saia','vestido','calca','mangapm','mangag','corpo','manga','calcam'];
 
-var applet = ['#applet_container1','#applet_container2','#applet_container3','#applet_container4', '#applet_container5','#applet_container6','#applet_container7','#applet_container8','#applet_container9'];
+var applet = ['#applet1','#applet2','#applet3','#applet4', '#applet5','#applet6','#applet7','#applet8','#applet9'];
 for(let i = 0; i<applet.length; i++){
 $('li,a').click(function(){
 if($(this).attr('class') == botao[i]) {
@@ -510,9 +510,13 @@ padding-left: 20px;
     </ul>
     </div>
   
-  
-<div id="divhome" >MOLDES DE ROUPAS</div>
-      
+  <div id="principal" >
+    <br>
+    <br>
+    <br>     
+<div id="divhome" >MOLDES DE ROUPAS</div></div>
+         	                 
+           
   
    <p id="objetivo" align="justify" > Este site tem o objetivo de auxiliar o trabalho de alfaiates e costureiras domésticas com moldes que possibilitam ao usuário alterar o tamanho de acordo as suas medidas corporais através de controles deslizantes. Os moldes disponíveis são gerados a partir do software GeoGebra, na qual as curvas dos mesmos são projetadas com equações paramétricas das curvas de Bézier. A ideia de criação do site surgiu do projeto 'As curvas de Bézier aplicadas à modelagem de roupas', desenvolvido pela orientadora Adina Rocha dos Santos, a co-orientadora Alane da Rocha Alves, e os alunos Elisa Victória Ferreira de Lima, José Guilherme Silva de lima e Raiane Dantas da Silva.
             </p>    
@@ -520,27 +524,61 @@ padding-left: 20px;
   <div class="container" >
         
   <img id="img1" src="fundo.png" height="300"  ></div>
-<br>
-<br>
-<br>
 
-<div  id="applet_container1" class="newClass1"></div>
-         	                                         
+
+<div id="applet1">
+    <br>
+    <br>        	                 
+      <br>     
+    <div  id="applet_container1" class="newClass1"></div></div>
+
+<div id="applet2">
+    <br>
+    <br>        	                 
+      <br>                    
 <div id="applet_container2" class="newClass2"></div>
-                  
-<div  id="applet_container3" class="newClass3"></div>           
-            
-   <div  id="applet_container4" class="newClass4"></div>
-         	                                         
+</div>              
+
+<div id="applet3">
+    <br>
+    <br>        	                 
+      <br>         
+<div  id="applet_container3" class="newClass3"></div>   </div>        
+    <div id="applet4">
+    <br>
+    <br>        	                 
+      <br>           
+   <div  id="applet_container4" class="newClass4"></div></div>
+   
+ <div id="applet5">
+    <br>
+    <br>        	                 
+      <br>           	                                         
 <div id="applet_container5" class="newClass5"></div>
-                  
+</div>
+<div id="applet6">
+    <br>
+    <br>        	                 
+      <br>                     
 <div id="applet_container6" class="newClass6"></div>                  
-                
-<div  id="applet_container7" class="newClass7"></div>
-                  
-<div  id="applet_container8" class="newClass8"></div>
-                  
-<div  id="applet_container9" class="newClass9"></div>
+     </div>  
+       <div id="applet7">
+    <br>
+    <br>        	                 
+      <br>            
+<div  id="applet_container7" class="newClass7"></div></div>
+     
+     <div id="applet8">
+    <br>
+    <br>        	                 
+      <br>                
+<div  id="applet_container8" class="newClass8"></div></div>
+   
+   <div id="applet9">
+    <br>
+    <br>        	                 
+      <br>                  
+<div  id="applet_container9" class="newClass9"></div></div>
              
   
   
